@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "966437188652",
+    "firebase_url": "https://back4app-push.firebaseio.com",
+    "project_id": "back4app-push",
+    "storage_bucket": "back4app-push.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966437188652:android:d24a1969705f5f2c",
+        "android_client_info": {
+          "package_name": "dominwong4.scm.back4apppushnotificationcloudcode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966437188652-mme7vivv8pj2eiu9e3ocr3b6bpav2uji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgRF1tkF5LvDL4c-pAyIz7yMtY7Lhxo2I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
