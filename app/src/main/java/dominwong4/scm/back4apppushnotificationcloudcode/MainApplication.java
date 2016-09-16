@@ -5,7 +5,13 @@ import android.content.Context;
 import android.util.Log;
 
 import com.parse.Parse;
+import com.parse.ParseException;
 import com.parse.ParseInstallation;
+import com.parse.ParsePush;
+import com.parse.SaveCallback;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by wonghoyin on 15/9/2016.
@@ -38,5 +44,15 @@ public class MainApplication extends Application {
         ParseInstallation installation = ParseInstallation.getCurrentInstallation();
         installation.put("GCMSenderId", "966437188652");
         installation.saveInBackground();
+
+        ParsePush.subscribeInBackground("test_channel", new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if(e==null)
+                Log.d("Parse","Success");
+                else
+                    Log.d("Parse","Failed");
+            }
+        });
     }
 }
